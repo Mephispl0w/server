@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: barcode-scanner-backend
+    env: node
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "node index.js"
+    envVars:
+      - key: KEEP_API_KEY
+        value: YOUR_KEEPA_API_KEY
